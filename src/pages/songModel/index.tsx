@@ -185,14 +185,18 @@ export default memo(function SongModel({navigation}: any) {
   };
   return (
     <View style={{width: '100%', height: '100%'}}>
-      <StatusBar backgroundColor="#524437" />
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
       <LinearGradient
         style={{
           height: '100%',
           width: '100%',
           paddingLeft: 15,
           paddingRight: 15,
-          paddingTop: 6,
+          paddingTop: 28,
         }}
         colors={['#524437', '#6f634c', '#594d43', '#201b1f', '#0d0c0f']}>
         <View
@@ -396,7 +400,7 @@ export default memo(function SongModel({navigation}: any) {
                 style={{
                   position: 'relative',
                   paddingHorizontal: 5,
-                  paddingTop:2
+                  paddingTop: 2,
                 }}>
                 <Ionicons
                   size={26}

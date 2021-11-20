@@ -8,7 +8,7 @@ const defaultState = Map({
     name: '庐州月',
     imgUrl:
       'https://p2.music.126.net/3hqcQrXZ39kDCCzV7QbZjA==/34084860473122.jpg',
-    songUrl: 'https://music.163.com/song/media/outer/url?id=167850.mp3',
+    musicUrl: 'https://music.163.com/song/media/outer/url?id=167850.mp3',
     artists: [
       {
         id: 5771,

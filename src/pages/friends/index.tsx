@@ -106,7 +106,11 @@ export default memo(function Friends({navigation}: any) {
 
   return (
     <View style={{height: '100%', width: '100%', paddingBottom: 70}}>
-      <StatusBar backgroundColor="#f5f5f5" />
+      <StatusBar
+        translucent={false}
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
       <TabPage
         numColumns={2}
         listHeight={screenWidth * 0.75}

@@ -121,6 +121,11 @@ export default memo(function Notifies({navigation}: any) {
   };
   return (
     <View style={{height: '100%', backgroundColor: '#fff', paddingBottom: 70}}>
+      <StatusBar
+        translucent={false}
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
       <Tabs
         tabs={tabs}
         tabBarBackgroundColor="#f5f5f5"

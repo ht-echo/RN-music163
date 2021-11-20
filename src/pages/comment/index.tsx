@@ -82,7 +82,6 @@ export default memo(function Comment({route, navigation}: any) {
   };
   return (
     <View style={{backgroundColor: '#fff', height: '100%'}}>
-      <StatusBar backgroundColor="#fff" />
       <FlatList
         keyExtractor={(item: any, i) => item.commentId || i}
         data={comment}

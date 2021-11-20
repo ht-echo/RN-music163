@@ -37,7 +37,6 @@ export const FlatListHeader = ({
   const navigation = useNavigation();
   return (
     <View>
-      <StatusBar backgroundColor="#fff" />
       <WhiteSpace />
       <View
         style={{

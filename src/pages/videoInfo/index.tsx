@@ -9,7 +9,6 @@ import {useDispatch} from 'react-redux';
 import {changeAudioPlayAction} from '../../store/actions';
 export default memo(function VideoInfo({route}: any) {
   const dispatch = useDispatch();
-  console.log('route :>> ', route);
   const {width, height, scale} = Dimensions.get('window');
   const videoRef = useRef();
   const [videoData, setVideoData]: any = useState({});

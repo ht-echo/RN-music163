@@ -21,7 +21,6 @@ export default memo(function SongListInfo({route}: any) {
     getData();
   }, [route.params?.id]);
   const getData = async () => {
-    console.log('route.params :>> ', route.params);
     const params = route.params;
     if (params) {
       if (params.type === 'daily') {
@@ -222,7 +221,6 @@ export default memo(function SongListInfo({route}: any) {
 
   return (
     <View style={{height: '100%'}}>
-      <StatusBar backgroundColor="#7d7d7d" barStyle="light-content" />
       <FlatList
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item, index) => item.id || index}

@@ -126,7 +126,6 @@ export default memo(function Mine({navigation}: any) {
         paddingBottom: 70,
         height: '100%',
       }}>
-      <StatusBar backgroundColor="#f5f5f5" />
 
       <ScrollView>
         <View style={styles.loginBar}>

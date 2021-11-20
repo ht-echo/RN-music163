@@ -35,7 +35,6 @@ export default memo(function loginWithPhone({navigation}: any) {
   };
   return (
     <View>
-      <StatusBar backgroundColor="#fff" />
       <View
         style={{
           display: 'flex',

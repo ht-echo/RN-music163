@@ -249,8 +249,9 @@ export default memo(function Discover({navigation}: any) {
   return (
     <View style={styles.discover}>
       <StatusBar
-        backgroundColor={isDarkMode ? '' : '#f5f5f5'}
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        translucent={false}
+        backgroundColor="transparent"
+        barStyle="dark-content"
       />
       <View style={{position: 'relative'}}>
         <SearchBar

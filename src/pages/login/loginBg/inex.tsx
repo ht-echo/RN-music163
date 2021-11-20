@@ -5,7 +5,11 @@ import {Button, Avatar} from 'react-native-elements';
 export default memo(function LoginBg({navigation}: any) {
   return (
     <View style={styles.loginBg}>
-      <StatusBar backgroundColor="#d92c20" />
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
       <Avatar
         containerStyle={{backgroundColor: '#f22a27'}}
         size={80}

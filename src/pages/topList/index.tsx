@@ -163,7 +163,6 @@ export default memo(function SongTop() {
   };
   return (
     <View style={{height: '100%'}}>
-      <StatusBar backgroundColor="#f5f5f5" />
       <Tab
         indicatorStyle={{
           width: 0,

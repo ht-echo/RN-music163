@@ -1,4 +1,5 @@
 import {setData, getData} from '../storage';
+import consoleRn from 'reactotron-react-native';
 
 import {songDetail, lyric, songUrl, djDetail} from '../api';
 function getSongUrl(id: string | number) {
@@ -79,17 +80,16 @@ export const setSongAction = (item: string | number | any) => {
   return async (dispatch: any) => {
     const {data}: any = await songUrl({id: djType ? item.mainSong.id : item});
     let currentSong = {};
-    let songRes: any = {};
+    const songGetData: object | any = await songDetail({ids: item});
+    const songRes = songGetData && songGetData.songs && songGetData.songs[0];
     if (!djType) {
-      const songGetData: object | any = await songDetail({ids: item});
-      const songRes = songGetData && songGetData.songs && songGetData.songs[0];
       currentSong = {
         id: songRes.id,
         name: songRes.name,
         imgUrl: songRes.al && songRes.al.picUrl,
         artists: songRes.ar || songRes.artists,
       };
-      console.log('songRes :>> ', songRes);
+      console.log('songRes :>> ', songRes, songRes.id);
     } else {
       const resDj: object | any = await djDetail({rid: item.radio.id});
       currentSong = {

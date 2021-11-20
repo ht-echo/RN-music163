@@ -2,6 +2,8 @@ import React, {useState, useRef, useEffect, memo} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Video from 'react-native-video';
 import {useSelector, useDispatch} from 'react-redux';
+import consoleRn from 'reactotron-react-native';
+
 import {
   changeAudioMsgAction,
   setSongAction,
@@ -82,12 +84,9 @@ export default memo(function AudioPlayback() {
             uri: audioUrl,
           }}
           onLoadStart={(res: any) => {
-            console.log(`isNetwork`, res);
             setIsNetwork(res.src.isNetwork);
           }}
-          onError={(err: any) => {
-            console.log(`err`, err);
-          }}
+          onError={(err: any) => {}}
           onProgress={({currentTime, playableDuration}: any) => {
             dispatch(
               changeAudioMsgAction({currentTime, duration: playableDuration}),

@@ -65,7 +65,6 @@ export default memo(function Login({navigation}: any) {
   };
   return (
     <View style={styles.loginBox}>
-      <StatusBar backgroundColor="#f5f5f5" />
       <Text>长按图片保存</Text>
       <Text>打开网易云音乐扫一扫,点击确认登录</Text>
       <WhiteSpace />

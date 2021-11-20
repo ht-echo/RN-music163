@@ -6,6 +6,7 @@ import {
   View,
   TouchableHighlight,
   Dimensions,
+  StatusBar,
 } from 'react-native';
 import consoleRn from 'reactotron-react-native';
 import {getScreenWidth} from '../components/songList';

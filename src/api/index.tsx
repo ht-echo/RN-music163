@@ -1,10 +1,10 @@
 import axios from 'axios';
 import {Toast} from '@ant-design/react-native';
-if (__DEV__) {
-  axios.defaults.baseURL = 'http://192.168.1.88:3000';
-} else {
+// if (__DEV__) {
+//   axios.defaults.baseURL = 'http://192.168.1.88:3000';
+// } else {
   axios.defaults.baseURL = 'https://vercel-cloudmusic.vercel.app';
-}
+// }
 axios.defaults.withCredentials = true;
 axios.defaults.timeout = 20000;
 function getData(url: string, params?: any) {
